@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Git, Status } from './libraries/git';
 import { Table } from './libraries/table';
 
