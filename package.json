@@ -1,0 +1,44 @@
+{
+    "name": "@danny270793/gitmanagerjs",
+    "description": "Script to check the status of a git repos",
+    "version": "1.0.0",
+    "files": [
+        "./build/**/*"
+    ],
+    "main": "./build/index.js",
+    "bin": "./build/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node ./build/index.js",
+        "start:watch": "ts-node-dev --respawn ./src/index.ts",
+        "lint": "eslint --fix .",
+        "format": "prettier --write .",
+        "test": "jest",
+        "test:watch": "jest --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/danny270793/gitmanagerjs"
+    },
+    "keywords": [
+        "git"
+    ],
+    "author": {
+        "email": "danny270793@icloud.com",
+        "name": "Danny Vaca",
+        "url": "https://danny270793.github.io"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@eslint/js": "^9.18.0",
+        "@types/jest": "^29.5.14",
+        "eslint": "^9.18.0",
+        "globals": "^15.14.0",
+        "jest": "^29.7.0",
+        "prettier": "^3.4.2",
+        "ts-jest": "^29.2.5",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.20.0"
+    }
+}
